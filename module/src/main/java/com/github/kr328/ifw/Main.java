@@ -18,9 +18,9 @@ public class Main {
         Log.i(TAG, "Uid = " + Process.myUid());
         Log.i(TAG, "Pid = " + Process.myPid());
 
-        if (!ZygoteLoader.PACKAGE_SYSTEM_SERVER.equals(ZygoteLoader.getPackageName())) {
-            return;
-        }
+//        if (!ZygoteLoader.PACKAGE_SYSTEM_SERVER.equals(ZygoteLoader.getPackageName())) {
+//            return;
+//        }
 
         try {
             new ServiceManagerProxy.Builder()
